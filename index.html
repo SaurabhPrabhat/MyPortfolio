@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Saurabh Prabhat</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" style="position: relative; text-align: center; padding: 50px; color: white; overflow: hidden;">
+        <!-- Background Image -->
+        <div style="position: absolute; inset: 0; background: url('office-desk-with-keyboard-mobile-phone.jpg') no-repeat center center; background-size: cover; opacity: 0.2;"></div>
+        
+        <!-- Content Wrapper -->
+        <div style="position: relative; z-index: 1;">
+            <h2>About Me</h2>
+            <img src="myofficialimg.jpg" alt="Your Name" 
+                 style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 20px auto; border: 3px solid white;">
+            <p><b>Hello! I'm Saurabh Prabhat, a B.Tech. computer science undergrad at NIT Patna.<br>I am a passionate web developer and competitive programmer.</b></p>
+            <button style=" background-color: #efe8e8;"id="download-resume" onclick="downloadResume()" style="background-color: white; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Download Resume</button>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+
+    <section id="projects"style="position: relative; text-align: center; padding: 50px; color: white; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: url('pexels-thirdman-5582867.jpg') no-repeat center center; background-size: cover; opacity: 0.2;"></div>
+        <div style="position: relative; z-index: 1;">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p><b>Online class assisted with AI features</b><br>Developed an AI-enhanced virtual classroom environment, integrating real-time feedback mechanisms.The system
+                    is now utilized by over 500 students and has improved instructor response times by 30 % .
+                    Students can record transcripts of taught lessons without stop words as per their convenience,get optimised summary and download its PDF along with normal interaction and messaging in chat section during the live class.
+                    Tech stack: HTML,JavaScript,CSS,flask,spacy and zegocloud API. </p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p><b>Real Time Chat Application </b><br>User authentication (OAuth, JWT),one-on-one and group chats, message delivery/read status and typing indicators,media sharing (images, videos, files).
+                    Developed a feature allowing users to edit or delete messages within a 30-minute window, enhancing user experience
+                    and reducing message-related disputes by facilitating clearer communication among chat participants.
+                    Tech stack: React for user interface, Redux or Context API for state managementand Node.js with Socket.IO for
+                    real-time communication.</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <section id="skills"style="position: relative; text-align: center; padding: 50px; color: white; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: url('niclas-illg-FnfGRMXENYg-unsplash.jpg') no-repeat center center; background-size: cover; opacity: 0.2;"></div>
+        <div style="position: relative; z-index: 1;">
+        <h2>Skills</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p><b>Web Development</b><br>HTML,CSS,JavaScript,React,Node.js,Flask,MySQL</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p><b>Data and DevOps</b><br>Python and its libraries viz.Pandas,NumPy and Scikit,Classification,Regresion,Convolutional Neural Network,Natural Language Processing,Git,Github,Bash,AWS</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p><b>Competitive Programming</b><br>Data Structures & Algorithms,C,C++,Standard Template Library</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p><b>Computer Science Fundamentals</b><br>Oject Oriented Programming,Database Management System,Operating System,Computer Networks,Artificial Intelligence,Machine Learning</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <section id="experience"style="position: relative; text-align: center; padding: 50px; color: white; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: url('fernando-hernandez-vSI8ASKyMJ8-unsplash.jpg') no-repeat center center; background-size: cover; opacity: 0.2;"></div>
+        <div style="position: relative; z-index: 1;">
+        <h2>Work Experience</h2>
+        <div class="experience-list">
+            <div class="experience">
+                <h3>Job Title 1</h3>
+                <p><b>Fractal</b><br>Intern (Cloud and Data Tech.)<br>
+                Tech Stack : Streamlit , Snowflake , Neo4j , Cypher , Graphistry , Python.<br>
+                Developed a Streamlit web app from scratch in a team of 4 which transforms RDBMS to Neo4j graph database.
+                    The app fetched data from a Snowflake data warehouse and converted it into a Neo4j database.
+             Reduced query time for complex relationship queries by up to 70 % after transitioning from RDBMS to
+                    Neo4j, enhancing efficiency and flexibility in handling complex data relationships.
+                Streamlined data transformation processes, enabling the conversion of 10+ tables with thousands of rows in under
+                    30 minutes.</p>
+            </div>
+            <!-- Add more experiences here -->
+        </div>
+    </section>
+
+    <section id="contact"style="position: relative; text-align: center; padding: 50px; color: white; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: url('contact-3994013_1280.jpg') no-repeat center center; background-size: cover; opacity: 0.2;"></div>
+        <div style="position: relative; z-index: 1;">
+        <h2>Contact Me</h2>
+        <!-- <p>Find me on:</p> -->
+        <ul style="display: flex; justify-content: center; gap: 50px; list-style: none; padding: 0;">
+            <li>
+                <a href="https://github.com/SaurabhPrabhat" target="_blank" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="github-sign.png" alt="GitHub" style="width: 40px; height: 40px; margin-right: 8px;">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/saurabh-prabhat" target="_blank" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="linkedin.png" alt="LinkedIn" style="width: 40px; height: 40px; margin-right: 8px;">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:saurabhp.ug21.cs@nitp.ac.in" target="_blank" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="icons8-gmail-50.png" alt="Email" style="width: 40px; height: 40px; margin-right: 8px;"> 
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'https://drive.google.com/file/d/1rbJ7oEaHHx6kb41CpqN4C0ANyCfg-urA/view?usp=drive_link'; // Replace with the actual path to your resume file
+            link.download = 'Your_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        window.embeddedChatbotConfig = {
+            chatbotId: "0ElqXgy2cWOWLik9Ljnd0",
+            domain: "www.chatbase.co"
+        };
+    </script>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="0ElqXgy2cWOWLik9Ljnd0"
+        domain="www.chatbase.co"
+        defer>
+    </script>
+</body>
+</html>
