@@ -27,11 +27,14 @@ body {
 /* Header Styling */
 header {
     background: var(--secondary-color);
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     box-shadow: var(--box-shadow);
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .logo {
@@ -39,6 +42,7 @@ header .logo {
     font-size: 2rem;
     text-align: center;
     font-weight: 900;
+    margin-bottom: 1rem;
 }
 
 .nav-links {
@@ -46,7 +50,7 @@ header .logo {
     justify-content: center;
     gap: 2rem;
     list-style: none;
-    padding: 1rem 0;
+    padding: 0;
 }
 
 .nav-links a {
@@ -98,6 +102,7 @@ button {
 
 button:hover {
     background-color: black;
+    color: #fff;
 }
 
 /* Flexbox for Projects and Experience */
@@ -170,13 +175,22 @@ button:hover {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    header .logo {
-        font-size: 1.5rem;
+    header {
+        padding: 1rem;
     }
 
     .nav-links {
         flex-direction: column;
         gap: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
     }
 
     section {
@@ -185,5 +199,9 @@ button:hover {
 
     button {
         font-size: 0.9rem;
+    }
+
+    .project-list, .experience-list {
+        grid-template-columns: 1fr;
     }
 }
